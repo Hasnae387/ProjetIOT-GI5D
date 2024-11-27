@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="content">
+        <span>Bienvenue sur la page d'accueil</span>
+        <p>
+            Bienvenue sur notre site dédié à l'Internet des objets (IoT) ! Ici, vous pouvez afficher les données de température et d'humidité en temps réel sous forme de tableaux et de graphiques, ainsi que consulter les données JSON. Utilisez le bouton ci-dessous pour accéder aux différentes pages.
+        </p>
+        <ul>
+             <li><a href="{% url 'table' %}">application</a></li>
+        </ul>
+    </div>
+</body>
+</html>
